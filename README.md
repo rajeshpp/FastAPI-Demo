@@ -1,2 +1,35 @@
-# FastAPI-Demo
-This is a sample FastAPI app
+# FastAPI Basics
+
+### Install FastAPI
+> pip install fastapi[all]
+
+### Basic App
+Save with the name `main.py`
+```
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/")
+async def hello():
+    """Sample Startup Function"""
+    return "Hello FastAPI"
+
+```
+### Start App
+> uvicorn main:app
+
+<img src="./images/basic_app.png" alt="Basic App" width="500" height="500"/>
+
+### Get Users, when no users present
+<img src="./images/get_no_users.png" alt="Basic App" width="500" height="500"/>
+
+### Get Users, when users present
+<img src="./images/get_all_users.png" alt="Basic App" width="500" height="500"/>
+
+### Get Specific User
+<img src="./images/get_specific_user.png" alt="Basic App" width="500" height="500"/>
+
+### Create User
+<img src="./images/create_user.png" alt="Basic App" width="500" height="500"/>
