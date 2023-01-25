@@ -3,22 +3,12 @@
 ### Install FastAPI
 > pip install fastapi[all]
 
-### Basic App
-Save with the name `main.py`
-```
-from fastapi import FastAPI
+### Navigate to App Folder
+> cd App
 
-app = FastAPI()
-
-
-@app.get("/")
-async def hello():
-    """Sample Startup Function"""
-    return "Hello FastAPI"
-
-```
 ### Start App
 > uvicorn main:app
+
 
 <img src="./images/basic_app.png" alt="basic_app" width="500" height="500"/>
 
