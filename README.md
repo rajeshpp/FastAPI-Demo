@@ -5,7 +5,7 @@
 
 ### Navigate to App Folder
 > cd App
-
+ 
 ### Start App
 > uvicorn main:app
 
