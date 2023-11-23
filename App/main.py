@@ -2,9 +2,11 @@ from fastapi import FastAPI
 from utils.read_file import get_all_users, get_specific_user
 from utils.store_users import post_user
 from models.users import Users
+from mangum.adapter import Mangum
 
 app = FastAPI()
 input_file = 'users.txt'
+handler = Mangum(app)
 
 
 @app.get("/")
